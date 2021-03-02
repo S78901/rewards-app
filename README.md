@@ -1,3 +1,22 @@
+# Rewards Challenge
+
+The code of the application parses a rewards challenge, as follows:
+
+A retailer offers a rewards program to its customers, awarding points based on each recorded purchase. 
+ 
+A customer receives 2 points for every dollar spent over $100 in each transaction, plus 1 point for every dollar spent over $50 in each transaction 
+(e.g. a $120 purchase = 2x$20 + 1x$50 = 90 points).
+ 
+Given a record of every transaction during a three month period, calculate the reward points earned for each customer per month and total.
+ 
+•	Use React JS
+•	Make up a data set to best demonstrate your solution
+•	Check solution into GitHub
+
+# This React Application demonstrates via a two-page layout (list, then table) customers' rewards points both in total and separately.
+
+Below you will find instructions on how to work with Create React App, which is the base React Application template the project was made with. Material UI was used for the table, Moment.js for the dates format, and React Router Dom for routing between list format and detailed data.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
