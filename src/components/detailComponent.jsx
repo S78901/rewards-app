@@ -38,17 +38,17 @@ function getPoints(total) {
 }
 
 const totalRewards = (e) => {
-  let list = [];
-  let totalPoints = 0;
+  let list = []; // Create empty list for rewards points
+  let totalPoints = 0; // Initialize a totalPoints number
   for (let i = 0, client; client = clientData[i]; i++) {
-    if (e == i) {
+    if (e == i) { //Check to make sure we are only calculating for the current customer
       for (let z = 0, transaction; transaction = client.log[z]; z++) {
-        list.push(getPoints(transaction.transaction));
+        list.push(getPoints(transaction.transaction)); //Push data per each iteration to the list, processed by getPoints func
       }
-      totalPoints = list.length ? list.reduce((acc, key) => key + acc, 0) : 0;
+      totalPoints = list.length ? list.reduce((acc, key) => key + acc, 0) : 0; // Reduce the list to one sum
     }
   }
-  return totalPoints;
+  return totalPoints; // Return the sum
 }
 
 const DetailComponent = (props) => {
